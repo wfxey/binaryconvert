@@ -8,7 +8,7 @@ setup(
   author = 'wfxey',
   author_email = 'projectsdi02@gmail.com',
   url = 'https://github.com/wfxey/binaryconvert',
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',
+  download_url = 'https://github.com/wfxey/binaryconvert/archive/refs/tags/v1.0.tar.gz',
   keywords = ['binary', '8x-Bit', 'text-to-binary'],
   classifiers=[
     'Development Status :: 1 - Stable',
