@@ -1,7 +1,0 @@
-[tool.poetry]
-name = "binaryconvert"
-version = "1.0"
-description = ""
-authors = ["wfxey"]
-readme = "README.md"
-packages = [{include = "binaryconvert"}]
