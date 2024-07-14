@@ -15,7 +15,7 @@ from binaryconvert.convert import binary
 
 Tobinary("Hi, my name is wfxey!")
 ```
-# Output
+### Output
 ```bash
 01001000 01100001 01100001 01101100 01100001 01101100 01101100 01100001 01100001 01101111
 ```
@@ -27,7 +27,7 @@ from binaryconvert.convert import binary
 
 Tobinary("01001000 01100001 01100001 01101100 01100001 01101100 01101100 01100001 01100001 01101111")
 ```
-## Output
+### Output
 ```bash
 Hi, my name is wfxey!
 ```
