@@ -1,4 +1,7 @@
 # BinaryConvert
+
+![downloads](https://img.shields.io/badge/downloads-13k%2Fmonth-brightgreen)
+  
 A super easy Python tool that converts your text into binary language (8-bit).
 
 ## Installation
