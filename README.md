@@ -6,7 +6,7 @@ A super easy Python tool that converts your text into binary language (8-bit).
 ```bash
 pip install binaryconvert
 ```
-# Exmaple
+# Example
 
 <hr>
 
