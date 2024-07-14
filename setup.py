@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     
 setup(
     name='binaryconvert',
-    version='1.1',
+    version='1.2',
     packages=find_packages(),
     license='MIT',
     description='A super easy Python tool that converts your text into binary language (8-bit).',
@@ -14,7 +14,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/wfxey/binaryconvert',
-    download_url='https://github.com/wfxey/binaryconvert/archive/refs/tags/v1.0.tar.gz',
+    download_url='https://github.com/wfxey/binaryconvert/archive/refs/tags/v1.2.tar.gz',
     keywords=['binary', '8-bit', 'text-to-binary'],
     install_requires=[
         #Empty
