@@ -13,9 +13,9 @@ pip install binaryconvert
 ## ToBinary()
 
 ```python
-from binaryconvert.convert import binary
+from binaryconvert import convert
 
-Tobinary("Hi, my name is wfxey!")
+convert.ToBinary("Hi, my name is wfxey!")
 ```
 ### Output
 ```bash
@@ -26,9 +26,9 @@ Tobinary("Hi, my name is wfxey!")
 ## ToText()
 
 ```python
-from binaryconvert.convert import binary
+from binaryconvert import convert
 
-Tobinary("01001000 01100001 01100001 01101100 01100001 01101100 01101100 01100001 01100001 01101111")
+convert.ToText("01001000 01100001 01100001 01101100 01100001 01101100 01101100 01100001 01100001 01101111")
 ```
 ### Output
 ```bash
