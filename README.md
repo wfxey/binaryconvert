@@ -1,5 +1,5 @@
 # BinaryConvert
-
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/:binaryconvert)
 A super easy Python tool that converts your text into binary language (8-bit).
 
 ## Installation
