@@ -12,3 +12,16 @@ from binaryconvert.convert import binary
 
 binary("Hi, my name is wfxey!")
 ```
+# Output
+```bash
+01001000
+01100001
+01100001
+01101100
+01100001
+01101100
+01101100
+01100001
+01100001
+01101111
+```
