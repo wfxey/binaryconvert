@@ -1,2 +1,3 @@
 # __init__.py
-from .convert import binary
+from .convert import ToBinary
+from .convert import ToText
