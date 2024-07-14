@@ -1,1 +1,2 @@
-import binaryconvert.convert as convert
+##__init__.py
+from binaryconvert.convert import binary

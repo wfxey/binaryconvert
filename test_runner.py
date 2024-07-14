@@ -1,5 +1,5 @@
 #Example
-import binaryconvert.convert as convert
+from binaryconvert.convert import binary
 
-convert.binary("Hi, my name is wfxey!")
+binary("Hi, my name is wfxey!")
 #Run command with own text!
