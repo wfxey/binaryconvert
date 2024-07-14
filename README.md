@@ -8,6 +8,8 @@ pip install binaryconvert
 ```
 # Exmaple
 
+<hr>
+
 ## ToBinary()
 
 ```python
