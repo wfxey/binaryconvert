@@ -1,3 +1,8 @@
-# binaryconvert
-A super easy python tool that converts your text in binary language 8x Bit.
+# BinaryConvert
 
+A super easy Python tool that converts your text into binary language (8-bit).
+
+## Installation
+
+```bash
+pip install binaryconvert
