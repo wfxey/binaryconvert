@@ -31,6 +31,6 @@ setup(
     ],    
     entry_points='''
         [console_scripts]
-        diec-cli=diec.cli:cli
+        cli=binaryconvert.cli:cli
     ''',
 )
