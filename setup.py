@@ -31,6 +31,6 @@ setup(
     ],    
     entry_points='''
         [console_scripts]
-        cli=binaryconvert.cli:cli
+        binaryconvert-cli=binaryconvert.cli:cli
     ''',
 )
