@@ -19,3 +19,6 @@ def to_text(binary):
     """Convert binary (8-bit) to normal text."""
     text_result = ToText(binary)
     click.echo(text_result)
+
+cli.add_command(to_binary)
+cli.add_command(to_text)
