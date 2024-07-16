@@ -49,7 +49,7 @@ BinaryConvert also provides a command line interface (CLI) for easy conversion w
 Convert normal text to binary (8-bit) using the to_binary command.
 
 ```bash
-binaryconvert to_binary "Hi, my name is wfxey!"
+python -m binaryconvert to_binary "Hi, my name is wfxey!"
 ```
 ### Output
 ```bash
@@ -60,7 +60,7 @@ binaryconvert to_binary "Hi, my name is wfxey!"
 Convert binary (8-bit) to normal text using the to_text command.
 
 ```bash
-binaryconvert to_text "01001000 01101001 00101100 00100000 01101101 01111001 00100000 01101110 01100001 01101101 01100101 00100000 01101001 01110011 00100000 01110111 01100110 01111000 01100101 01111001 00100001"
+python -m binaryconvert to_text "01001000 01101001 00101100 00100000 01101101 01111001 00100000 01101110 01100001 01101101 01100101 00100000 01101001 01110011 00100000 01110111 01100110 01111000 01100101 01111001 00100001"
 ```
 ### Output
 ```bash
