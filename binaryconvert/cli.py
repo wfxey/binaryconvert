@@ -7,10 +7,10 @@ def cli():
     pass
 
 @click.command()
-@click.argument('text')
-def to_binary(text):
+@click.argument('text', 'bit')
+def to_binary(text, bit):
     """Convert normal text to binary (8-bit)."""
-    binary_result = ToBinary(text)
+    binary_result = ToBinary(text, bit)
     click.echo(binary_result)
 
 @click.command()
