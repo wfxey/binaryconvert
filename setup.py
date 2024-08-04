@@ -10,7 +10,7 @@ setup(
     license='MIT',
     description='A super easy Python tool that converts your text into binary language.',
     author='wfxey',
-    author_email='projectsdi02@gmail.com',
+    author_email='di.projects.help@gmail.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/wfxey/binaryconvert',
