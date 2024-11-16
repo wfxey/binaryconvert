@@ -34,6 +34,6 @@ setup(
         binaryconvert-cli=binaryconvert.cli:cli
     ''',
     dependency_links=[
-        "https://github.com/wfxey/binaryconvert"
+        "https://github.com/wfxey/binaryconvert/packages"
     ],
 )
