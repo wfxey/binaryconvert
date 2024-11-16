@@ -33,4 +33,7 @@ setup(
         [console_scripts]
         binaryconvert-cli=binaryconvert.cli:cli
     ''',
+    dependency_links=[
+        "https://github.com/wfxey/binaryconvert"
+    ],
 )
