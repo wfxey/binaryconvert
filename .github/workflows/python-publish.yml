@@ -1,39 +1,57 @@
-# This workflow will upload a Python Package using Twine when a release is created
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries
-
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
 name: Upload Python Package
 
+# This workflow will be triggered when a release is created or manually triggered.
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
+# Permissions for the workflow (read access to repository contents)
 permissions:
   contents: read
+  packages: write  # Allows writing to package registries like PyPI
+  id-token: write  # Required for GitHub token-based authentication
 
 jobs:
   deploy:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    # Checkout the repository code
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    # Set up Python environment
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
         python-version: '3.x'
+
+    # Install dependencies (e.g., pip, build tools)
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install build
+        pip install build twine
+
+    # Build the Python package (this assumes a pyproject.toml or setup.py is present)
     - name: Build package
       run: python -m build
-    - name: Publish package
-      uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
+
+    # Publish the package to PyPI
+    - name: Publish package to PyPI
+      uses: pypa/gh-action-pypi-publish@v1.3.0
       with:
-        user: __token__
-        password: ${{ secrets.PYPI_PASSWORD }}
+        user: __token__  # PyPI uses GitHub token for authentication
+        password: ${{ secrets.PYPI_PASSWORD }}  # Store PyPI token securely in GitHub Secrets
+
+    # Optionally, you can also verify the upload by checking the PyPI release
+    - name: Verify package release
+      run: |
+        # You can optionally verify the package on PyPI here
+        curl -s https://pypi.org/project/$(python setup.py --name)/ | grep 'Release'
+        echo "Package successfully released!"
+      
+    # Optional step for clean-up if needed (e.g., removing build artifacts)
+    - name: Clean up build files
+      run: |
+        rm -rf dist build *.egg-info
